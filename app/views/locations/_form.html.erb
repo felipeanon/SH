@@ -18,11 +18,7 @@
   <div class="field">
     <%= f.label :tag %><br>
     <%= f.text_field :tag %>
-  </div>
-  <div class="field">
-    <%= f.label :event_id %><br>
-    <%= f.text_field :event_id %>
-  </div>
+    <%= f.hidden_field :event_id, :value => params[:event_id] %>
   <div class="actions">
     <%= f.submit %>
   </div>

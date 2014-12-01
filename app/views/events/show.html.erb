@@ -28,6 +28,6 @@
     <% end %>
   </tbody>
 </table>
-
+<%= link_to 'New Location', new_location_path({:event_id => @event.id}) %>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
